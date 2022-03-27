@@ -5,7 +5,7 @@ const express = require("express"),
   app = express(),
   port = process.env.PORT || 3001,
   mongoose = require("mongoose"),
-  image = require("./server/routes/Image");
+  image = require("./routes/Image");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
