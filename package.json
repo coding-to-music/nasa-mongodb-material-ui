@@ -25,7 +25,9 @@
     "validator": "^13.1.17"
   },
   "scripts": {
-    "start": "react-scripts start && node server.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "pm2-runtime start ecosystem.config.js --env development",
+    "oldstart": "react-scripts start && node server.js",
     "build": "react-scripts build",
     "prod": "pm2-runtime start ecosystem.config.js --env production",
     "test": "react-scripts test",
