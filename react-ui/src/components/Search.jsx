@@ -52,7 +52,7 @@ export default function Search(props) {
     <Grid item className={classes.root} container xs={11} alignItems="center">
       <Card className={classes.card}>
         <SearchBar handleSearch={handleSearch} />
-        <Grid item xs={12} container justify="center" align="center" container>
+        <Grid item xs={12} container justify="center" align="center">
           <CardContent>
             {results.length > 0 ? (
               results.map((image) => (

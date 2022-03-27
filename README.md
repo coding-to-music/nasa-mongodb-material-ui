@@ -8,7 +8,11 @@ By Idan Shalem https://github.com/IdanShalem
 
 https://github.com/IdanShalem/nasaapp
 
-Generate API key
+## Heroku
+
+Follow instructions here: https://github.com/mars/heroku-cra-node
+
+## Generate API key
 
 https://api.nasa.gov/
 
