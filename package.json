@@ -25,12 +25,12 @@
     "validator": "^13.1.17"
   },
   "scripts": {
+    "heroku-prebuild": "npm install pm2",
     "start": "pm2-runtime start ecosystem.config.js --env production",
-    "heroku-postbuild": "npm install pm2",
     "dev": "pm2-runtime start ecosystem.config.js --env development",
     "oldstart": "react-scripts start && node server.js",
     "build": "react-scripts build",
-    "prod": "pm2-runtime start ecosystem.config.js --env production",
+    "prod": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "review": "node node_modules/elevation-pr/index.js"
