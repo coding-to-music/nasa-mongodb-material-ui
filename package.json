@@ -25,11 +25,11 @@
     "validator": "^13.1.17"
   },
   "scripts": {
-    "heroku-prebuild": "npm install pm2",
-    "start": "node server.js",
+    "heroku-prebuild": "npm install -g serve",
+    "startServer": "node server.js",
     "badstart": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "pm2-runtime start ecosystem.config.js --env development",
-    "oldstart": "react-scripts start && node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "prod": "react-scripts start",
     "test": "react-scripts test",
