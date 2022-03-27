@@ -1,5 +1,5 @@
 {
-  "name": "nasa-mongodb-material-ui",
+  "name": "nasa-mongodb-material-ui-server",
   "version": "0.1.0",
   "private": true,
   "scripts": {
