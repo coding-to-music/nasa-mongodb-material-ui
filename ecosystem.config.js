@@ -14,7 +14,7 @@ module.exports = {
     },
     {
       name: "Client",
-      script: "npm prod",
+      script: "npm prod && serve -s build",
 
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
       instances: 1,
