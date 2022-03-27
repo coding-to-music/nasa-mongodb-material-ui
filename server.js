@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 
 const express = require("express"),
   app = express(),
@@ -8,6 +9,9 @@ const express = require("express"),
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use(express.static(path.resolve(__dirname, "../build")));
+
 // mongoose.connect(
 //   process.env.MONGODB_URI || "mongodb://localhost/nasa-mongodb-material-ui"
 // );
