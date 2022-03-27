@@ -12,6 +12,20 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.resolve(__dirname, "../react-ui/build")));
 
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, "../react-ui/build")));
+
+// Answer API requests.
+app.get("/api", function (req, res) {
+  res.set("Content-Type", "application/json");
+  res.send('{"message":"Hello from the custom server!"}');
+});
+
+// All remaining requests return the React app, so it can handle routing.
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "../react-ui/build", "index.html"));
+});
+
 // mongoose.connect(
 //   process.env.MONGODB_URI || "mongodb://localhost/nasa-mongodb-material-ui"
 // );
@@ -54,63 +68,3 @@ app.listen(port, () => console.log(`app listening on port ${port}!`));
 
 // var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
-
-// .then((connection) => {
-//   console.log(connection.connection.db.listCollections().toArray());
-//   // return connection.connection.db.listCollections().toArray();
-// })
-// .then((collections) => {
-//   console.log(collections);
-
-//   return Promise.resolve({
-//     success: true,
-//     collections,
-//   });
-
-// db.once("open", function callback() {
-//   console.log("h");
-// });
-
-// mongoose.connect(mongoString, { useNewUrlParser: true, useUnifiedTopology: true })
-// .then((connection) => {
-//  return connection.connection.db.listCollections().toArray();
-// })
-// .then((collections) => {
-//  return Promise.resolve({
-//   success: true,
-//   collections
-//  });
-// })
-// .catch((err) => Promise.reject(err.message || err));
-
-// var db = mongoose.connection;
-
-// connection.on("open", function () {
-//   connection.db.listCollections().toArray(function (err, names) {
-//     if (err) {
-//       console.log(err);
-//     } else {
-//       console.log(names);
-//     }
-
-//     mongoose.connection.close();
-//   });
-// });
-
-// db.findOne(
-//   {
-//     name,
-//   },
-//   (err, obj) => {
-//     console.log(obj);
-//   }
-// );
-
-// console.log(
-//   "Collection Names: ",
-//   db.runCommand({
-//     listCollections: 1.0,
-//     authorizedCollections: true,
-//     nameOnly: true,
-//   })
-// );
