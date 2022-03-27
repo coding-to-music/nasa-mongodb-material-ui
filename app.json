@@ -1,5 +1,5 @@
 {
-  "name": "nasa-mongodb-material-ui",
+  "name": "nasa-mongodb-material-ui-app",
   "description": "web app made of create-react-app UI + Node API",
   "scripts": {},
   "env": {},
