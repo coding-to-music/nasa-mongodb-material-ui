@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.8",
+    "pm2": "^5.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.6.2",
@@ -26,6 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "prod": "pm2-runtime start ecosystem.config.js --env production",
     "heroku-postbuild": "node ./server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
