@@ -1,5 +1,5 @@
 {
-  "name": "nasapp",
+  "name": "nasa-mongodb-material-ui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,7 +26,8 @@
   },
   "scripts": {
     "heroku-prebuild": "npm install pm2",
-    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "start": "node server.js",
+    "badstart": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "pm2-runtime start ecosystem.config.js --env development",
     "oldstart": "react-scripts start && node server.js",
     "build": "react-scripts build",
