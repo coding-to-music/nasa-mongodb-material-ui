@@ -26,6 +26,7 @@
   },
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js --env production",
+    "heroku-postbuild": "npm install pm2",
     "dev": "pm2-runtime start ecosystem.config.js --env development",
     "oldstart": "react-scripts start && node server.js",
     "build": "react-scripts build",
