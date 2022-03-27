@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dcb5bc73.chunk.css",
+    "main.js": "/static/js/main.0007adf4.chunk.js",
+    "main.js.map": "/static/js/main.0007adf4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ff7b230d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ff7b230d.js.map",
+    "static/js/2.951eb807.chunk.js": "/static/js/2.951eb807.chunk.js",
+    "static/js/2.951eb807.chunk.js.map": "/static/js/2.951eb807.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bdd89afccc9ce7b209ad9b0305c3d8f9.js": "/precache-manifest.bdd89afccc9ce7b209ad9b0305c3d8f9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.dcb5bc73.chunk.css.map": "/static/css/main.dcb5bc73.chunk.css.map",
+    "static/js/2.951eb807.chunk.js.LICENSE.txt": "/static/js/2.951eb807.chunk.js.LICENSE.txt",
+    "static/media/istockphoto-1141690154-170667a.jpg": "/static/media/istockphoto-1141690154-170667a.a1daa95f.jpg",
+    "static/media/kisspng-logo-nasa-insignia-vector-graphics-portable-networ-vasper-5c0bc49343c935.1278996415442750912777.png": "/static/media/kisspng-logo-nasa-insignia-vector-graphics-portable-networ-vasper-5c0bc49343c935.1278996415442750912777.162e4f4a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff7b230d.js",
+    "static/js/2.951eb807.chunk.js",
+    "static/css/main.dcb5bc73.chunk.css",
+    "static/js/main.0007adf4.chunk.js"
+  ]
+}

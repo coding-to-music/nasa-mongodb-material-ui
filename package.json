@@ -2,6 +2,33 @@
   "name": "nasa-mongodb-material-ui",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "node server",
+    "build": "cd react-ui/ && npm install && npm run build",
+    "prod": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "review": "node node_modules/elevation-pr/index.js"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -25,31 +52,12 @@
     "serve": "^13.0.2",
     "validator": "^13.1.17"
   },
-  "scripts": {
-    "oldheroku-prebuild": "npm install -g serve",
-    "startServer": "node server.js",
-    "badstart": "pm2-runtime start ecosystem.config.js --env production",
-    "dev": "pm2-runtime start ecosystem.config.js --env development",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "prod": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "review": "node node_modules/elevation-pr/index.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
 }
